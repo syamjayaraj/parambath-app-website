@@ -19,7 +19,7 @@ export default function Home() {
               className={styles.appLogo}
               priority
             />
-            <h1 className={styles.heroTitle}>Welcome to Parambath</h1>
+            <h1 className={styles.heroTitle}>Welcome to Parambath App</h1>
             <p className={styles.subtitle}>
               Your comprehensive digital gateway to village services, connecting
               community and convenience
