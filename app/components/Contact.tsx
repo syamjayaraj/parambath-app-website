@@ -50,7 +50,7 @@ export default function Contact() {
             className={styles.contactLink}
           >
             <address className={styles.address}>
-              Floyet Labs and Technologies
+              Floyet Labs & Technologies LLP
               <br />
               Door No: 2211, 2/1149/100
               <br />
