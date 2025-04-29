@@ -17,13 +17,14 @@ export default function Hero() {
             />
           </div>
           <h1 className={styles.heroTitle}>
-            Your Village Services
+            Thalakkulathur Village Services
             <br />
             In Your Pocket
           </h1>
           <p className={styles.subtitle}>
-            Experience seamless access to village services, community
-            connections, and local updates — all in one powerful mobile
+            Experience seamless access to village services in Thalakkulathur,
+            Kozhikode, Kerala. Stay connected with community events, local
+            businesses, and essential services — all in one powerful mobile
             application.
           </p>
           <div className={styles.storeButtons}>

@@ -39,7 +39,9 @@ export default function Footer() {
         <div className={styles.bottomText}>
           <p className={styles.madeIn}>
             Carefully Handcrafted in{" "}
-            <span className={styles.highlight}>INDIA</span> | Powered by{" "}
+            <span className={styles.highlight}>INDIA</span> | Serving{" "}
+            <span className={styles.highlight}>Thalakkulathur Village</span> |
+            Powered by{" "}
             <a
               href="https://floyet.com"
               target="_blank"

@@ -13,11 +13,13 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata: Metadata = {
-  title: "Parambath App - Your Village Services Platform",
+  title: "Parambath App - Thalakkulathur Village Services Platform",
   description:
-    "The Parambath App is your go-to platform for accessing essential services and staying updated with everything happening in and around Parambath. Find local businesses, events, workers, delivery services and more - all in Malayalam.",
+    "The Parambath App is your go-to platform for accessing essential services and staying updated with everything happening in Thalakkulathur village, Kozhikode, Kerala. Find local businesses, events, workers, delivery services and more - all in Malayalam.",
   keywords: [
     "Parambath",
+    "Thalakkulathur",
+    "Kozhikode",
     "Kerala",
     "Local Services",
     "Events",
@@ -25,9 +27,9 @@ export const metadata: Metadata = {
     "Malayalam App",
   ],
   openGraph: {
-    title: "Parambath App - Your Village Services Platform",
+    title: "Parambath App - Thalakkulathur Village Services Platform",
     description:
-      "Access essential Parambath village services, find local businesses, stay updated with events, and connect with service providers - all in Malayalam.",
+      "Access essential services in Thalakkulathur village, Kozhikode, Kerala. Find local businesses, stay updated with events, and connect with service providers - all in Malayalam.",
     images: [
       {
         url: "/app-logo.png",
