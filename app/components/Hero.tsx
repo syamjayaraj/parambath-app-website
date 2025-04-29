@@ -42,18 +42,21 @@ export default function Hero() {
                 className={styles.storeImage}
               />
             </a>
-            <div className={styles.comingSoon}>
-              <div className={`${styles.storeButton} ${styles.disabled}`}>
-                <Image
-                  src="/app-store.png"
-                  alt="Download on App Store"
-                  width={35}
-                  height={35}
-                  className={styles.storeImage}
-                />
-              </div>
-              <span className={styles.comingSoonBadge}>Coming Soon</span>
-            </div>
+            <a
+              href="https://apps.apple.com/in/app/parambath-app/id6745081315"
+              target="_blank"
+              rel="noopener noreferrer"
+              className={styles.storeButton}
+              aria-label="Get it on App Store"
+            >
+              <Image
+                src="/app-store.png"
+                alt="Get it on App Store"
+                width={35}
+                height={35}
+                className={styles.storeImage}
+              />
+            </a>
           </div>
         </div>
         <div className={styles.heroImageWrapper}>
