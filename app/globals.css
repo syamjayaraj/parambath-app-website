@@ -1,8 +1,14 @@
 :root {
-  --background: #ffffff;
-  --foreground: #171717;
+  /* Modern Professional Palette */
+  --background: #f8fafc;
+  --foreground: #0f172a;
+  --primary: #2563eb;
+  --primary-dark: #1d4ed8;
+  --accent: #f59e0b;
+  --card-bg: #ffffff;
+  --text-muted: #64748b;
+  --border: #e2e8f0;
 }
-
 
 html,
 body {
@@ -23,7 +29,6 @@ body {
   box-sizing: border-box;
   padding: 0;
   margin: 0;
-  transition: all 0.3s ease;
 }
 
 a {
@@ -31,9 +36,31 @@ a {
   text-decoration: none;
 }
 
+/* Scrollbar Styling */
+::-webkit-scrollbar {
+  width: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #cbd5e1;
+  border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #94a3b8;
+}
+
 @media (prefers-color-scheme: dark) {
-  html {
-    color-scheme: dark;
+  :root {
+    --background: #0f172a;
+    --foreground: #f8fafc;
+    --card-bg: #1e293b;
+    --text-muted: #94a3b8;
+    --border: #334155;
   }
 }
 

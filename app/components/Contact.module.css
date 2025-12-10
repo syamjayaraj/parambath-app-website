@@ -1,131 +1,114 @@
 .contact {
-  padding: 4rem 2rem;
-  background: #fff;
+  padding: 6rem 2rem;
+  background: var(--background);
+  position: relative;
 }
 
 .sectionTitle {
   text-align: center;
-  font-size: 2rem;
-  margin-bottom: 3rem;
-  color: #333;
+  font-size: 2.5rem;
+  margin-bottom: 1rem;
+  color: var(--foreground);
+  font-weight: 700;
+  letter-spacing: -0.02em;
+}
+
+.sectionSubtitle {
+  text-align: center;
+  font-size: 1.125rem;
+  color: var(--text-muted);
+  max-width: 600px;
+  margin: 0 auto 4rem;
+  line-height: 1.6;
 }
 
 .contactGrid {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-  gap: 1.5rem;
-  max-width: 1200px;
+  grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+  gap: 2rem;
+  max-width: 1280px;
   margin: 0 auto;
 }
 
 .contactCard {
-  padding: 2rem;
-  padding-left: 1rem;
-  padding-right: 1rem;
-  border-radius: 12px;
+  padding: 2.5rem 1.5rem;
+  border-radius: 20px;
   text-align: center;
-  background: #f8f9fa;
-  transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+  background: var(--card-bg);
+  box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.05),
+    0 2px 4px -1px rgba(0, 0, 0, 0.03);
   display: flex;
   flex-direction: column;
   align-items: center;
   gap: 1rem;
-  border: 1px solid transparent;
+  border: 1px solid var(--border);
+  transition: border-color 0.3s ease;
 }
 
 .contactCard:hover {
-  transform: translateY(-5px);
-  box-shadow: 0 8px 30px rgba(0, 0, 0, 0.08);
-  /* border-color: rgba(44, 62, 80, 0.1); */
+  border-color: var(--primary);
+}
+
+.iconWrapper {
+  width: 64px;
+  height: 64px;
+  background: rgba(37, 99, 235, 0.1);
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 0.5rem;
+  color: var(--primary);
+  transition: all 0.3s ease;
+}
+
+.contactCard:hover .iconWrapper {
+  background: var(--primary);
+  color: white;
+  transform: rotate(10deg);
 }
 
 .icon {
-  font-size: 1.75rem;
-  color: #2c3e50;
-  transition: transform 0.3s cubic-bezier(0.4, 0, 0.2, 1);
-}
-
-.contactCard:hover .icon {
-  transform: scale(1.1);
+  font-size: 1.5rem;
 }
 
 .contactCard h3 {
-  font-size: 1.1rem;
-  color: #333;
+  font-size: 1.25rem;
+  color: var(--foreground);
   margin: 0;
+  font-weight: 600;
 }
 
 .contactLink {
-  color: #2c3e50;
+  color: var(--text-muted);
   text-decoration: none;
   font-size: 1rem;
-  transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
-  position: relative;
-}
-
-.contactLink::after {
-  content: '';
-  position: absolute;
-  width: 0;
-  height: 1px;
-  bottom: -2px;
-  left: 0;
-  background-color: currentColor;
-  transition: width 0.3s ease;
-}
-
-.contactLink:hover::after {
-  width: 100%;
+  transition: color 0.2s ease;
 }
 
 .contactLink:hover {
-  color: #34495e;
+  color: var(--primary);
 }
 
 .address {
   font-style: normal;
   line-height: 1.6;
-  color: #666;
+  color: var(--text-muted);
   font-size: 0.95rem;
   margin: 0;
 }
 
-.socialLinks {
-  display: flex;
-  gap: 1.5rem;
-  justify-content: center;
-  width: 100%;
-}
-
-.socialLink {
-  display: flex;
-  align-items: center;
-  gap: 0.5rem;
-  color: #333;
-  text-decoration: none;
-  transition: color 0.2s;
-  font-size: 0.95rem;
-}
-
-.socialLink:hover {
-  color: #0066cc;
-}
-
-.socialLink .icon {
-  font-size: 1.5rem;
-}
-
 @media (max-width: 768px) {
   .contact {
-    padding: 2rem 1rem;
+    padding: 4rem 1.5rem;
+  }
+
+  .sectionTitle {
+    font-size: 2rem;
   }
 
   .contactGrid {
     grid-template-columns: 1fr;
-    gap: 1rem;
+    max-width: 400px;
   }
-
-  .contactCard {
-    padding: 1.5rem;
-  }
-} 
+}

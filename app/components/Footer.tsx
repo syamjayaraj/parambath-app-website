@@ -1,5 +1,8 @@
+"use client";
+
 import { FaInstagram, FaFacebook } from "react-icons/fa";
 import styles from "./Footer.module.css";
+import { motion } from "framer-motion";
 
 export default function Footer() {
   return (
@@ -16,7 +19,8 @@ export default function Footer() {
             </a>
           </div>
           <div className={styles.socialLinks}>
-            <a
+            <motion.a
+              whileHover={{ scale: 1.2, color: "#E1306C" }}
               href="https://www.instagram.com/parambathapp"
               target="_blank"
               rel="noopener noreferrer"
@@ -24,8 +28,9 @@ export default function Footer() {
               aria-label="Follow us on Instagram"
             >
               <FaInstagram />
-            </a>
-            <a
+            </motion.a>
+            <motion.a
+              whileHover={{ scale: 1.2, color: "#1877F2" }}
               href="https://www.facebook.com/parambathapp"
               target="_blank"
               rel="noopener noreferrer"
@@ -33,20 +38,22 @@ export default function Footer() {
               aria-label="Follow us on Facebook"
             >
               <FaFacebook />
-            </a>
+            </motion.a>
           </div>
         </div>
         <div className={styles.bottomText}>
           <p className={styles.madeIn}>
             Carefully Handcrafted in{" "}
-            <span className={styles.highlight}>INDIA</span> | Serving{" "}
-            <span className={styles.highlight}>Thalakkulathur Village</span> |
+            <span className={styles.highlight}>INDIA</span> for{" "}
+            <span className={styles.highlight}>Thalakkulathur Village</span>
+          </p>
+          <p className={styles.poweredBy}>
             Powered by{" "}
             <a
               href="https://floyet.com"
               target="_blank"
               rel="noopener noreferrer"
-              className={styles.footerLink}
+              className={styles.brandLink}
             >
               FLOYET
             </a>
